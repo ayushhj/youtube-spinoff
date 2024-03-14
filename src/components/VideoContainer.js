@@ -26,7 +26,7 @@ const getVideos = async()=>{
   return (
     <div className='flex flex-wrap px-3'>
       { videos.map((video)=>( 
-        <Link to={"/watch?v=" + video.id } > <VideoCard key={video.id}  info={video}/> </Link> 
+        <Link to={"/watch?v=" + video.id} key={video.id}  > <VideoCard  info={video}/> </Link> 
          ))}
   
     </div>
